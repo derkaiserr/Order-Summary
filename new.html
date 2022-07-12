@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/43b5c59b64.js" crossorigin="anonymous"></script>
+    <style>
+        img {
+            width: 4rem;
+            display: inline-block;
+        }
+        body{
+            margin-top: -11rem;
+        }
+        p{
+            width: fit-content;
+            display: inline-block;
+            padding: 2px 16px;
+          
+        }
+        .header{
+           width: fit-content;
+            border-bottom: 1px rgb(40, 40, 40) solid;
+          
+        }
+
+
+        #head{
+             margin-left: 10.7rem;
+            padding-left: 64px;
+        }
+
+        .one{
+            border: rgb(148, 148, 148) 2px solid;
+            margin: 0px 0 0 0;
+            border-radius: 10px;
+            width: 93%;
+            height: 4.9rem;
+           
+            box-sizing: content-box;
+        }
+        .two{
+            border: rgb(148, 148, 148) 2px solid;
+            margin: -3px 0 0 0;
+            border-radius: 10px;
+             height: 5.2rem;
+             width: 93%;
+        }
+        .three{
+            border: rgb(148, 148, 148) 2px solid;
+            margin: -3px 0 0 0;
+            border-radius: 10px;
+             height: 5.2rem;
+             width: 93%;
+        }
+        .four{
+            border: rgb(148, 148, 148) 2px solid;
+            margin: -3px 0 0 0;
+          height: 4.5rem;
+            border-radius: 10px;
+            width: 93%;
+        }
+
+        .unsect{
+            display: inline-block;
+            background-color: rgb(255, 255, 255);
+            margin-left: 6%;
+            width: 51%;
+            font-size: 20px;
+            line-height: 13px;
+            height: fit-content;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .unhead{
+            text-align: left;
+            font-size: 36px;
+            font-weight: 600;
+
+        }
+        .dohead{
+            text-align: center;
+            font-size: 36px;
+            font-weight: 600;
+
+        }
+
+     
+        
+
+        .dosect{
+            width: 30%;
+            display: inline-block;
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin-top: -2rem;
+            margin-bottom: -2rem;
+            margin-left: 4rem;
+            margin-right: -7rem;
+            padding: 20% 10% 1% 10px;
+            background-color: rgb(246, 246, 246);
+            background-position: right;
+        }
+        .dosect img{
+            width: 2.2rem;
+            margin-right: 20px;
+        }
+
+        .number{
+            margin-top: -4px;
+            font-size: 11px;
+            color: rgb(234, 234, 234);
+            word-spacing: 10px;
+        }
+
+        .atm{
+            font-size: 12px;
+            margin-left: 30px;
+            background: linear-gradient(70deg, #37036b, #37036b,#9835fa, #9a35fe, #9842ed);
+            padding-top: 30px;
+            padding-bottom: 10px;
+            color: #ffffff;
+            border-radius: 15px;
+
+        }
+
+        .dobody p{
+           
+            width: 100%;
+            margin-left: 1rem ;
+            line-height: 1px;
+            font-size: 17px;
+            font-weight: 600;
+        }
+        .dobody input{
+            width: 90%;
+            margin-left: 1.9rem ;
+             border-radius: 5px;
+            border: 1.3px rgb(100, 100, 100) solid;
+            height: 23px;
+        }
+        .date {
+            width: fit-content;
+            display: inline-block;
+            margin-left: 5rem;
+            line-height: 5px;
+               font-weight: 600;
+        }
+        .date input{
+            width: 7rem;
+            border-radius: 5px;
+            border: 1.3px rgb(100, 100, 100) solid;
+            height: 23px;
+        }
+
+        .cvv{
+              width: fit-content;
+            display: inline-block;
+            margin-left: 1.5rem;
+             line-height: 5px;
+                font-weight: 600;
+        }
+
+ .cvv input{
+            width: 7rem;
+             border-radius: 5px;
+            border: 1.3px rgb(100, 100, 100) solid;
+            height: 23px;
+        }
+
+        .complete{
+            text-align: center;
+            width: fit-content;
+          line-height: 0px;
+          font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            box-sizing: content-box;
+            padding: 0px 77px 0 75px;
+            border-radius: 9px;
+            background-color: rgb(255, 115, 0);
+            color: white;
+            box-shadow: black 2px 4px 10px -7px;
+            margin-left: 2em;
+            margin-top: 5px;
+            font-size: 20px;
+        }
+        .paypal{
+           
+            width: fit-content;
+          line-height: 0px;
+          font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            box-sizing: content-box;
+            padding: 0px 69px 0 45px;
+            border-radius: 9px;
+            border: black 1.5px solid;
+            color: rgb(41, 41, 41);
+          
+            margin-left: 2em;
+            margin-top: 5px;
+            font-size: 20px;
+        }
+        .paypal img{
+            width: 2rem;
+            display: inline-block;
+            margin-bottom: -10px;
+            border-radius: 15px;
+            margin-left: 25px;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="unsect" >
+        <div class="unhead">
+            <p>Order Summary</p>
+
+        </div>
+
+        <div class="header">
+        <p id="prod">Product</p>
+        
+
+            <p id="head">Size</p>
+            <p id="hea">Qty</p>
+            <p id="hea"  style= "padding-right:104px;">Price</p>
+        
+    </div>
+    <br>
+<div class="one">
+    <p><img src="./jordan 1.jpg" alt=""> Air Jordan 1 High Blue</p>
+    <p style="padding-left: 34px;">43</p>
+    <p style="padding-left: 26px;">-1+</p>
+    <p style="padding-left: 23px;">$136</p>
+    <p style="padding-left: 31px;"><i class="fa-solid fa-trash"></i></p></p>
+</div>    
+<br>
+<div class="two">
+<p><img src="./nike dunk high.jpg" alt=""> Nike SB Dunk Highs</p>
+<p style="padding-left: 62px;">43</p>
+<p style="padding-left: 25.3px;">-2+</p>
+<p style="padding-left: 23px;">$200</p>
+<p style="padding-left:32px;"><i class="fa-solid fa-trash"></i></p>
+</div>
+<br>
+<div class="three">
+<p><img src="./air jordan 1 brown.jpg" alt=""> Air Jordan 1 High Brown</p>
+<p style="padding-left: 18px;">44</p>
+<p style="padding-left: 25px;">-1+</p>
+<p style="padding-left: 23px;">$140</p>
+<p style="padding-left:32px;"><i class="fa-solid fa-trash"></i></p>
+</div>
+<br>
+<div class="four">
+    <p><img src="./nike free trecks.jpg" alt=""> Nike Free Trecks</p>
+    <p style="padding-left: 85px;">46</p>
+    <p style="padding-left: 26px;">-1+</p>
+    <p style="padding-left: 21px;">$63</p>
+    <p style="padding-left:43px;"><i class="fa-solid fa-trash"></i></p>
+</div>
+<br>
+
+<div style="width: 93%;">
+    <div style="border-top: 1.5px grey solid ;">
+    <p>SubTotal</p>
+    <p style="margin-left: 27.7rem;">$523</p>
+</div>
+<p>Shipping</p>
+<p style="margin-left: 27.7rem;">$17</p>
+
+<div style="border-top: 1.5px grey solid ;">
+    <p>Total</p>
+    <p style="margin-left: 29.6rem;">$550</p>
+</div>
+</div>
+
+</div>
+
+<div class="dosect">
+    <div class="dohead">
+        <p>Card Details</p>
+    </div>
+    <br>
+    <div class="atm">
+        <img src="./card panel.jpg" alt="" style="float: right; border-radius: 6px; ">
+        <p class="number">XXXX XXXX XXXX 1323</p>
+        <br>
+        <p style="font-size: 18px; margin-top: -5px;">Khalil Kasope Dodo</p>
+        <br>
+        <br>
+        <br>
+        <P>XX/24</P>
+        <P style="float: right; margin-right: 9px;">VISA</P>
+    </div>
+<br>
+    <div class="dobody">
+        <p>Card Number</p>
+        <input type="number" name="card number" id="number">
+        <br>
+        <p>Card Holder Name</p>
+        <input type="name" name="card name" id="name">
+    </div>
+
+    <div class="date">
+        <p>Expiry Date</p>
+        <br>
+        <input type="datetime" name="date" id="cvv">
+    </div>
+    <div class="cvv">
+        <p>CVV</p>
+        <br>
+        <input type="number" name="cvv" id="cvv">
+    </div>
+<br>
+<br>
+
+    <div class="complete">
+        <p>Complete Payment</p>
+    </div>
+
+    <p style="text-align: center; width: 100%;">OR</p>
+
+    <div class="paypal">
+        <img src="./paypal.png" alt="">
+        <p>Pay with paypal</p>
+    </div>
+
+</div>
+
+</body>
+</html>
