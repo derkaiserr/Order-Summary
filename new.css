@@ -319,7 +319,7 @@ width: 24.37rem;
 }
 @media screen and (max-width:650px) {
     body{
-        transform: scale(0.61);
+        transform: scale(0.63);
         margin: 0 0 0 -5.5rem;
         overflow-x: hidden;
     }
@@ -328,7 +328,7 @@ width: 24.37rem;
         padding: 0;
     }
     .dosect{
-        margin: 0 -10rem 2rem -1rem;
-        padding: 3rem 15%;
+        margin: 0 -12rem 2rem -2rem;
+        padding: 3rem 18%;
     }
 }
