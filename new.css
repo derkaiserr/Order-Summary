@@ -319,7 +319,7 @@ width: 24.37rem;
 }
 @media screen and (max-width:650px) {
     body{
-        transform: scale(0.55);
+        transform: scale(0.61);
         margin: 0 0 0 -5.5rem;
         overflow-x: hidden;
     }
