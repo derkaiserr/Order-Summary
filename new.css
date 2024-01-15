@@ -4,11 +4,9 @@ img {
 }
 
 body {
-    /* margin-top: -4%; */
     overflow-x: hidden;
-    /* width: 100%; */
-    margin-top: -2rem;
-    margin-right: 0;
+   
+    margin: -2rem 0 5rem 0 ;
     display: grid;
     grid-template-columns: 1.2fr 1fr;
     grid-column-gap: 6rem;
@@ -17,7 +15,6 @@ body {
 
 p {
     width: fit-content;
-    /* display: inline-block; */
     padding: 2px 16px;
 
 }
@@ -62,8 +59,7 @@ grid-template-columns: 4fr 1.8fr 1.8fr 1.8fr;
 
 
 #head {
-    /* margin-left: 10.7rem;
-    padding-left: 64px; */
+    
 }
 
 .one {
@@ -71,7 +67,6 @@ grid-template-columns: 4fr 1.8fr 1.8fr 1.8fr;
     margin: 0px 0 0 0;
     padding: 15px 0 0 15px;
     border-radius: 10px;
-    /* width: 93%; */
     height: auto;
     display: grid;
     grid-template-columns: 2fr 5.8fr 2fr 2fr 2fr 2fr;
@@ -80,10 +75,8 @@ grid-template-columns: 4fr 1.8fr 1.8fr 1.8fr;
 
 .two {
     border: rgb(148, 148, 148) 2px solid;
-    /* margin: -3px 0 0 0; */
     padding: 15px 0 0 15px;
     border-radius: 10px;
-    /* width: 93%; */
         height: 4.3rem;
         display: grid;
         grid-template-columns: 2fr 5.8fr 2fr 2fr 2fr 2fr;
@@ -92,10 +85,8 @@ grid-template-columns: 4fr 1.8fr 1.8fr 1.8fr;
 
 .three {
     border: rgb(148, 148, 148) 2px solid;
-    /* margin: -3px 0 0 0; */
 padding: 15px 0 0 15px;
     border-radius: 10px;
-    /* width: 93%; */
     height: 4.3rem;
     display: grid;
     grid-template-columns: 2fr 5.8fr 2fr 2fr 2fr 2fr;
@@ -107,7 +98,6 @@ padding: 15px 0 0 15px;
     margin: -3px 0 0 0;
     padding: 15px 0 0 15px;
         border-radius: 10px;
-        /* width: 93%; */
         height: 4.3rem;
         display: grid;
         grid-template-columns: 2fr 5.8fr 2fr 2fr 2fr 2fr;
@@ -115,17 +105,13 @@ padding: 15px 0 0 15px;
     }
     
 .unsect {
-    /* display: inline-block; */
     transform: scale(0.89);
     background-color: rgb(255, 255, 255);
-    /* margin-left: 2rem; */
-    /* width: 44rem; */
-    /* flex: 1; */
+   
     margin-top: 0;
     min-width: 40rem;
     font-size: 20px;
     line-height: auto;
-    /* height: fit-content; */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -152,20 +138,15 @@ padding: 15px 0 0 15px;
 
 
 .dosect {
-    /* width: 25rem; */
-    /* flex: 1; */
+    
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-top: 0px;
-    padding-top: 16px;
-    /* margin-bottom: -2rem; */
-    /* margin-left: 2rem; */
-    /* margin-right: -7rem; */
-    /* padding: 20% 10% 1% 10px; */
+    
+    padding: 16px 0px 3rem;
+ 
     transform: scaleY(0.93);
-    /* width: auto;
-    margin: auto; */
+   
     background-color: rgb(246, 246, 246);
-    /* background-position: right; */
 }
 #number, #name{
 width: 24.37rem;
