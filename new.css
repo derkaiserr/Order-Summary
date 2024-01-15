@@ -27,17 +27,27 @@ i{
 }
 .TOTAL {
     display: grid;
-    grid-template-columns: 6.7fr 1fr;
+    grid-template-columns: 5.1fr 1fr;
     border-top: 1px solid grey;
     
+    
 }
+
 .TOTAL p{
     line-height: 0;
 }
 .total {
-    display: grid;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-around;
     border-top: 1px solid grey;
-    grid-template-columns: 6.7fr 1fr;
+    position: relative;
+
+}
+
+#total{
+    margin-left: 83.8%;
+    position: absolute;
 }
 .header {
     width: fit-content;
@@ -126,6 +136,11 @@ padding: 15px 0 0 15px;
 
 }
 
+
+.amount::before{
+    content: "$";
+    margin-right: 0.5rem;
+}
 .dohead {
     text-align: center;
     font-size: 36px;

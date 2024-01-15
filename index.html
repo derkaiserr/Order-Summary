@@ -28,11 +28,13 @@
     <br>
     <div class="orders">
 
+        
+
         <div id="one" class="one">
             <img src="./jordan 1.jpg" alt=""><p> Air Jordan 1 High Blue</p>
             <p >43</p>
             <p >-1+</p>
-            <p >$136</p>
+            <p id="price1" class="amount" >136</p>
             <p> <i id="bin1" class="fa-solid fa-trash"></i></p>
 </div>    
 <br>
@@ -40,7 +42,7 @@
 <img src="./nike dunk high.jpg" alt=""> <p>Nike SB Dunk Highs</p>
 <p >43</p>
 <p>-2+</p>
-<p >$200</p>
+<p id="price2"  class="amount">200</p>
 <p><i  id="bin2" class="fa-solid fa-trash"></i></p>
 </div>
 <br>
@@ -48,7 +50,7 @@
 <img src="./air jordan 1 brown.jpg" alt=""> <p>Air Jordan 1 High Brown</p>
 <p >44</p>
 <p >-1+</p>
-<p >$140</p>
+<p id="price3"  class="amount" >140</p>
 <p><i id="bin3" class="fa-solid fa-trash"></i></p>
 </div>
 <br>
@@ -57,7 +59,7 @@
     <p> Nike Free Trecks</p>
     <p >46</p>
     <p >-1+</p>
-    <p >$63</p>
+    <p id="price4" class="amount" >63</p>
     <p><i id="bin4" class="fa-solid fa-trash"></i></p>
 </div>
 </div>
@@ -65,15 +67,16 @@
 <div id="all" >
 
     <div  class="TOTAL">
+        
         <p>SubTotal</p>
-    <p >$523</p>
+    <p class="amount" id="subtotal" ></p>
     <p>Shipping</p>
-    <p id="TOTAL">$17</p>
+    <p id="shipping" class="amount" ></p>
 </div>
 
 <div  class="total">
     <p>Total</p>
-    <p id="total">$550</p>
+    <p class="amount" id="total">550</p>
 </div>
 </div>
 
@@ -83,31 +86,79 @@
         let two = document.getElementById('two')
         let three = document.getElementById('three')
         let four = document.getElementById('four')
+        let price1 = document.getElementById('price1')
+        let price2 = document.getElementById('price2')
+        let price3 = document.getElementById('price3')
+        let price4 = document.getElementById('price4')
         let bin1 = document.getElementById('bin1')
         let bin2 = document.getElementById('bin2')
         let bin3 = document.getElementById('bin3')
         let bin4 = document.getElementById('bin4')
         let total = document.getElementById('total') 
-        let totall = document.getElementById('TOTAL') 
+        let subtotal = document.getElementById('subtotal') 
+        let shipping = document.getElementById('shipping') 
         let all = document.getElementById('all') 
         
+        let numPrice1   = Number(price1.textContent)
+        let numPrice2   = Number(price2.textContent)
+        let numPrice3   = Number(price3.textContent)
+        let numPrice4   = Number(price4.textContent)
+
+        
+        subtotal.textContent = (numPrice1 + numPrice2 + numPrice3 + numPrice4)
+        
+        let shippingPrice = 0.0325 * (subtotal.textContent)
+        
+        function Calc() {
+  shipping.textContent = shippingPrice.toFixed(2);
+  total.textContent = (parseFloat(shipping.textContent) + parseFloat(subtotal.textContent)).toFixed(2);
+}
+Calc()
+function updateShippingPrice(itemPrice) {
+    subtotal.textContent -= itemPrice
+  shippingPrice = 0.0325 * (subtotal.textContent);
+  Calc();
+}
+
+        
+        
         bin1.addEventListener('click', function () {
-            console.log('dvdv ')
           one.style.display = 'none'
+          updateShippingPrice(numPrice1)
+          
         })
         bin2.addEventListener('click', function () {
-            console.log('dvdv ')
             two.style.display = 'none'
+            
+            updateShippingPrice(numPrice2)
         })
         bin3.addEventListener('click', function () {
-            console.log('dvdv ')
             three.style.display = 'none'
+            
+            updateShippingPrice(numPrice3)
         })
         bin4.addEventListener('click', function () {
-            console.log('dvdv ')
+            // subtotal.textContent -= numPrice4
             four.style.display = 'none'
+            updateShippingPrice(numPrice4)
         })
-    
+        // shippingPrice = 0.0325 * (subtotal.textContent)
+        
+        
+        
+        
+
+       
+
+      
+    //     const Order = [
+    //         {img: "./jordan 1.jpg", name:"Air Jordan 1 High Blue", size: "43", quantity: "1", price: "136"},
+    //         {img: "./nike dunk high.jpg", name:"Nike SB Dunk Highs", size: "43", quantity: "2", price: "200"},
+    //         {img: "./air jordan 1 brown.jpg", name:"Air Jordan 1 High Brown", size: "44", quantity: "1", price: "140"},
+    //         {img: "./nike free trecks.jpg", name:"Nike Free Trecks", size: "46", quantity: "1", price: "63"},
+    // ]
+
+
     </script>
 
 <div class="dosect">
